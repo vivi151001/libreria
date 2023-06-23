@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{background-color: orange;}
+       
+        #xBorde{ border: 3px;background-color: red}
+
+        .xForma{font-size: 32px; color: blue;}
+    </style>
+</head>
+<body>
+    <h1>TABLA 3X4</h1>
+    <table border="1">
+        <tr>
+            <td colspan="4">Fila1_Colum1</td>
+ <!--       <td>C1-F1</td>
+            <td>C2-F1</td>
+            <td>C3-F1</td>
+            <td>C4-F1</td>  -->     
+        </tr>
+        <tr>
+            <td>Fila2_Colum1</td>
+            <td rowspan="2">Fila2_Colum2</td>
+            <td id="xBorde">Fila2_Colum3</td>
+            <td>Fila2_Colum4</td>
+        </tr>
+        <tr>
+            <td>Fila3_Colum1</td>
+            <!--<td>Fila3_Colum2</td>-->  
+            <td id="xBorde">Fila3_Colum3</td>
+            <td class="xForma">Fila2_Colum4</td>
+        </tr>
+    </table>
+</body>
+</html>
+

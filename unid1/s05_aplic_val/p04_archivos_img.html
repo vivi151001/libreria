@@ -1,0 +1,32 @@
+<body>
+	<div id="content">
+		<form action="p00_validada.php" method="post" onsubmit="return  fnValidar04();">
+		<table>
+			<tr>
+				<th colspan="2" class="titulo">Aplicacion 4 ARCHIVO TIPO IMAGENES, PDF, PNG, ETC.</th>
+			</tr>
+			<tr>
+				<td id="tdIzq">Selccione Archivos JPG O PNG:</td>
+				<td id="tdDer"><input type="file" name="fileJPGpng" accept=".jpg, .png" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Selccione cualquier Imagen:</td>
+				<td id="tdDer"><input type="file" name="fileJPGpng" accept="image/*" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Selccione Archivos PDF:</td>
+				<td id="tdDer"><input type="file" name="filePDF" accept=".pdf" value="" required></td>
+			</tr>
+			<tr>
+				<td id="tdIzq">Escribir un correo Valido:</td>
+				<td id="tdDer"><input type="text" name="txtCorreo" pattern="^[\w._%-]+@[\w.-]+\.[a-zA-Z]{2,4}$" value="" required></td>
+			</tr>
+			<th colspan="2" class="subTitulo">
+				<input class="boton" type="submit" name="btnVer" value="Pasar">
+			</th>
+		</table>
+		</form>
+		 
+	</div>
+	</body>
+	</html>
